@@ -76,7 +76,7 @@ const Project = ({ currentUser }) => {
       <main className="z-10 flex flex-col items-center w-full px-6 py-24 mt-14 lg:px-0">
         {/* Header */}
         <div className="flex flex-col w-full h-full max-w-4xl">
-          <div className="flex flex-col items-start w-full lg:justify-between lg:flex-row lg:px-28">
+          <div className="flex flex-col items-start w-full lg:items-center lg:justify-between lg:flex-row lg:px-28">
             <div className="flex items-center space-x-4">
               <div className="w-24 h-24 border border-gray-200 rounded-full">
                 <Image
