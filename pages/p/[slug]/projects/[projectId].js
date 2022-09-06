@@ -141,7 +141,7 @@ const Project = ({ currentUser }) => {
           </div>
 
           {/* Copy */}
-          {project?.page && (
+          {project?.page.title && (
             <section className="flex flex-col w-full mt-16 space-y-4 lg:px-28">
               <span className="text-2xl font-light text-gray-900 font-inter">
                 {project?.page.title}

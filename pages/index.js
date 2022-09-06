@@ -86,14 +86,14 @@ export default function Home({ currentUser }) {
                     </span>
                   </a>
                 </Link>
-                {/* <Link href={`/p/demo`}>
+                <Link href={`/p/demo`}>
                   <a className="flex items-center px-4 space-x-2 border rounded-full h-7 boder-gray-200 ">
                     <ArrowUp className="w-4 h-4 text-gray-900 transform rotate-45" />
                     <span className="text-sm font-light text-gray-900 font-inter ">
                       View live portfolio
                     </span>
                   </a>
-                </Link> */}
+                </Link>
               </div>
             )}
           </div>
