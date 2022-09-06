@@ -163,7 +163,7 @@ const Project = ({ currentUser }) => {
                   <span className="text-lg font-light text-gray-900 lg:text-xl font-inter lg:px-28">
                     {image.title}
                   </span>
-                  <div className={`w-full h-auto p-20 ${user.theme}`}>
+                  <div className={`w-full h-auto p-6 lg:p-20 ${user.theme}`}>
                     <img className="w-full" src={image.url} />
                   </div>
                 </div>
