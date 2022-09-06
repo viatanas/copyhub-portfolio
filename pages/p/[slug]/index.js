@@ -48,7 +48,11 @@ export default function Home({ currentUser }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NavSecondary slug="viktor" user={user} currentUser={currentUser} />
+      <NavSecondary
+        slug={user?.username}
+        user={user}
+        currentUser={currentUser}
+      />
 
       <main className="z-10 flex justify-center w-full px-6 py-24 mt-14 lg:px-0">
         <div className="flex flex-col w-full max-w-5xl">

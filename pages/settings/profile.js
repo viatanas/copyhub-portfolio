@@ -194,7 +194,7 @@ const ProfileSettings = ({ currentUser }) => {
 
       <Toaster position="bottom-center" />
       {/* Back */}
-      <div className="fixed flex flex-col items-center space-y-4 top-20 left-6">
+      <div className="absolute flex flex-col items-center space-y-4 lg:fixed top-20 left-6">
         <button
           onClick={() => router.push(`/p/${username}`)}
           className="p-1 rounded-md hover:bg-gray-900 hover:bg-opacity-5 group"

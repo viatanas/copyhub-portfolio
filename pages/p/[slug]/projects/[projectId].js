@@ -58,7 +58,7 @@ const Project = ({ currentUser }) => {
 
       <Toaster position="bottom-center" />
       <NavTertiary
-        slug="viktor"
+        slug={user?.username}
         currentUser={currentUser}
         user={user}
         projectId={projectId}
@@ -67,7 +67,7 @@ const Project = ({ currentUser }) => {
       {/* Back */}
       <button
         onClick={() => router.push(`/p/${user.username}`)}
-        className="fixed p-1 rounded-md top-20 left-4 hover:bg-gray-900 hover:bg-opacity-5 group"
+        className="absolute p-1 rounded-md lg:fixed top-20 left-4 hover:bg-gray-900 hover:bg-opacity-5 group"
       >
         <LongArrowUpLeft className="w-6 h-6 text-gray-400 group-hover:text-gray-900" />
       </button>
