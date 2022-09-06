@@ -1,26 +1,200 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer utilities {
+  .editor {
+    @apply text-sm font-light leading-6 text-gray-900 font-inter;
   }
-  body {
-    color: white;
-    background: black;
+
+  .editor h1 {
+    @apply mt-6 mb-4 text-2xl font-normal;
   }
+
+  .editor h2 {
+    @apply mt-6 mb-4 text-lg font-normal;
+  }
+
+  .editor ul,
+  ol {
+    @apply my-4 ml-12;
+  }
+
+  .editor ul {
+    @apply list-disc;
+  }
+
+  .editor ol {
+    @apply list-decimal;
+  }
+
+  /* Read-only editor illustration - sm */
+  .editor-illustration-sm {
+    @apply text-[2px] font-light text-gray-900 bg-white font-inter;
+  }
+
+  .editor-illustration-sm h1 {
+    @apply mt-[1px] mb-[2px] text-[3px] font-normal;
+  }
+
+  .editor-illustration-sm h2 {
+    @apply mt-[1px] mb-[2px] text-[3px] font-normal;
+  }
+
+  .editor-illustration-sm ul,
+  ol {
+    @apply my-1 ml-3;
+  }
+
+  .editor-illustration-sm ul {
+    @apply list-disc;
+  }
+
+  .editor-illustration-sm ol {
+    @apply list-decimal;
+  }
+
+  /* Read-only editor illustration - md */
+  .editor-illustration-md {
+    @apply text-[8px] font-light text-gray-900 bg-white font-inter text-left;
+  }
+
+  .editor-illustration-md h1 {
+    @apply mt-[3px] mb-[4px] text-[10px] font-medium;
+  }
+
+  .editor-illustration-md h2 {
+    @apply mt-[3px] mb-[4px] text-[9px] font-medium;
+  }
+
+  .editor-illustration-md ul,
+  ol {
+    @apply my-2 ml-6;
+  }
+
+  .editor-illustration-md ul {
+    @apply list-disc;
+  }
+
+  .editor-illustration-md ol {
+    @apply list-decimal;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Wallpapers */
+  .mac-wallpaper {
+    background-image: url("/assets/themes/mac-wallpaper.jpg");
+    background-size: 100% 100%;
+  }
+
+  .black-wallpaper {
+    background-image: url("/assets/themes/black-wallpaper.png");
+    background-size: 100% 100%;
+  }
+
+  .blue-wallpaper {
+    background-image: url("/assets/themes/blue-wallpaper.png");
+    background-size: 100% 100%;
+  }
+
+  .green-wallpaper {
+    background-image: url("/assets/themes/green-wallpaper.png");
+    background-size: 100% 100%;
+  }
+
+  .orange-wallpaper {
+    background-image: url("/assets/themes/orange-wallpaper.png");
+    background-size: 100% 100%;
+  }
+
+  .red-wallpaper {
+    background-image: url("/assets/themes/red-wallpaper.png");
+    background-size: 100% 100%;
+  }
+
+  .purple-wallpaper {
+    background-image: url("/assets/themes/purple-wallpaper.png");
+    background-size: 100% 100%;
+  }
+}
+
+/* Inter */
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Thin.woff") format("woff");
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Black.woff") format("woff");
+  font-weight: 900;
+  font-display: swap;
+}
+
+.DraftEditor-editorContainer {
+  width: 100%;
+  border-left: 1px solid white;
+  position: relative;
+  z-index: 1;
+}
+
+.public-DraftEditorPlaceholder-root {
+  color: #9197a3;
+  position: absolute;
+  z-index: 1;
 }
