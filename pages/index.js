@@ -58,9 +58,9 @@ export default function Home({ currentUser }) {
               <span className="italic">Portfolios</span> <br></br> that impress
             </h1>
             <p className="w-full text-base font-light leading-7 text-center text-gray-500 mt-7 font-inter">
-              Build simple, professional, and well-designed copywriting
+              {` Build simple, professional, and well-designed copywriting
               portfolios in minutes. Join the waitlist to be notified when we're
-              live.
+              live.`}
             </p>
             {currentUser && (
               <>
@@ -154,8 +154,8 @@ export default function Home({ currentUser }) {
                   Never worry about design again
                 </span>
                 <span className="mt-4 text-base font-light leading-7 text-center text-gray-500 font-inter">
-                  We'll showcase your work with design best-practice, so you can
-                  focus on copy, not design.
+                  {`We'll showcase your work with design best-practice, so you can
+                  focus on copy, not design.`}
                 </span>
               </div>
 

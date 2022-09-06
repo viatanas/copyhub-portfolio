@@ -11,7 +11,7 @@ const ProjectSection = ({ projects, slug, theme }) => {
       {projects?.length < 1 && (
         <div className="flex flex-col items-center justify-center w-full mt-5 space-y-5 bg-gray-900 rounded-lg bg-opacity-5 border-3 h-80">
           <span className="text-sm font-light text-gray-600 font-inter">
-            The user hasn't uploaded any projects yet...
+            {`The user hasn't uploaded any projects yet...`}
           </span>
         </div>
       )}

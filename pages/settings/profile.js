@@ -325,7 +325,10 @@ const ProfileSettings = ({ currentUser }) => {
               </div>
               <div className="flex flex-wrap w-full mt-1 -ml-2">
                 {clients?.map((client) => (
-                  <div className="flex items-center mt-2 ml-2 space-x-1">
+                  <div
+                    key={client}
+                    className="flex items-center mt-2 ml-2 space-x-1"
+                  >
                     <button onClick={() => removeClient(client)}>
                       <Cancel className="w-3 h-3 text-gray-500 hover:text-gray-900" />
                     </button>
@@ -345,6 +348,7 @@ const ProfileSettings = ({ currentUser }) => {
               <div className="flex flex-wrap w-full -ml-2">
                 {serviceTags.map((tag) => (
                   <SettingsTag
+                    key={tag}
                     services={services}
                     tag={tag}
                     addService={addService}

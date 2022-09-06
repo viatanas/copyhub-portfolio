@@ -29,7 +29,7 @@ const AboutSection = ({ bio, services, clients, twitter, linkedin }) => {
 
           <div className="flex flex-wrap items-center pl-2 mt-2">
             {services.length > 0 ? (
-              services.map((service) => <Tag service={service} />)
+              services.map((service) => <Tag key={service} service={service} />)
             ) : (
               <span className="mt-2 -ml-2 text-sm font-light text-gray-500 font-inter">
                 No services provided yet.
@@ -53,7 +53,7 @@ const AboutSection = ({ bio, services, clients, twitter, linkedin }) => {
           {clients.length > 0 && (
             <div className="flex flex-wrap items-center mt-2">
               {clients.map((client, index) => (
-                <div className="mt-1">
+                <div key={client} className="mt-1">
                   <span className="text-sm font-light text-gray-500 font-inter">
                     {client}
                   </span>

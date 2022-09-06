@@ -155,8 +155,11 @@ const Project = ({ currentUser }) => {
           {/* Images */}
           {project?.images && (
             <div className="flex flex-col mt-16 space-y-20">
-              {project?.images.map((image) => (
-                <div className="flex flex-col items-start space-y-4 lg:space-y-6">
+              {project?.images.map((image, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-start space-y-4 lg:space-y-6"
+                >
                   <span className="text-lg font-light text-gray-900 lg:text-xl font-inter lg:px-28">
                     {image.title}
                   </span>

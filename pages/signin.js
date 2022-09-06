@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { LongArrowUpLeft } from "iconoir-react";
+import { LongArrowUpLeft, WarningCircledOutline } from "iconoir-react";
 
 // Imports
 import { auth, signInWithPopup, googleProvider } from "/firebase";

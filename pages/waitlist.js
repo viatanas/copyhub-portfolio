@@ -24,9 +24,9 @@ const Waitlist = () => {
               <span className="mt-1">that impress.</span>
             </div>
             <p className="mt-3 text-sm font-light leading-6 text-gray-500 font-inter">
-              Build simple, professional, and well-designed copywriting
+              {` Build simple, professional, and well-designed copywriting
               portfolios in minutes. Join the waitlist to be notified when we're
-              live.
+              live.`}
             </p>
           </section>
 
@@ -41,7 +41,7 @@ const Waitlist = () => {
           >
             <div className="flex flex-col mt-6 mc-field-group">
               <label
-                for="mce-EMAIL"
+                htmlFor="mce-EMAIL"
                 className="text-sm font-light text-gray-900 font-inter"
               >
                 Enter your email *
@@ -58,7 +58,7 @@ const Waitlist = () => {
 
             <div className="flex flex-col mt-8 mc-field-group">
               <label
-                for="mce-MMERGE5"
+                htmlFor="mce-MMERGE5"
                 className="text-sm font-light text-gray-900 font-inter"
               >
                 Link to your current portfolio (if any)
@@ -84,7 +84,7 @@ const Waitlist = () => {
               <input
                 type="text"
                 name="b_20bb292f39e7de3e265fb5e82_d796e5dcb5"
-                tabindex="-1"
+                tabIndex="-1"
                 value=""
               />
             </div>
