@@ -4,10 +4,11 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import nookies from "nookies";
-import { LongArrowUpLeft, Mail } from "iconoir-react";
+import { LongArrowUpLeft, Mail, Message } from "iconoir-react";
 import { Editor, EditorState, convertFromRaw } from "draft-js";
 import copy from "copy-to-clipboard";
 import { Toaster, toast } from "react-hot-toast";
+import { FeedbackFish } from "@feedback-fish/react";
 
 // Component imports
 import NavTertiary from "@/components/Navs/NavTertiary";
@@ -63,6 +64,18 @@ const Project = ({ currentUser }) => {
         user={user}
         projectId={projectId}
       />
+      {currentUser && (
+        <div className="fixed bottom-6 right-6">
+          <FeedbackFish projectId="17cd1ee16f8c77" userId={currentUser.email}>
+            <button className="p-4 bg-gray-900 rounded-full">
+              <Message
+                strokeWidth={2}
+                className="w-6 h-6 text-white fill-current"
+              />
+            </button>
+          </FeedbackFish>
+        </div>
+      )}
 
       {/* Back */}
       <button

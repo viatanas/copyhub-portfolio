@@ -242,7 +242,7 @@ export default function Home({ currentUser }) {
                     </div>
                   </div>
                   <span className="w-5/6 mt-2 text-base font-light leading-7 text-gray-500 font-inter">
-                    Bring new clients to you fby showcasing your work to the
+                    Bring new clients to you by showcasing your work to the
                     world. Or, explore trending copy to inspire and perfect your
                     next project.
                   </span>

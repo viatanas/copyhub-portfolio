@@ -1,7 +1,7 @@
 // Absolute imports
 import Head from "next/head";
 import { useState, useEffect } from "react";
-import { LongArrowUpLeft, Plus } from "iconoir-react";
+import { LongArrowUpLeft, Plus, Message } from "iconoir-react";
 import { Toaster, toast } from "react-hot-toast";
 import { useRouter } from "next/router";
 import {
@@ -12,6 +12,7 @@ import {
   ContentState,
 } from "draft-js";
 import noookies from "nookies";
+import { FeedbackFish } from "@feedback-fish/react";
 
 // Component imports
 import Nav from "@/components/Navs/NavPrimary";
@@ -224,6 +225,18 @@ const EditProject = ({ currentUser }) => {
 
       <Toaster position="bottom-center" />
       <Nav slug="settings" currentUser={currentUser} />
+      {currentUser && (
+        <div className="fixed bottom-6 right-6">
+          <FeedbackFish projectId="17cd1ee16f8c77" userId={currentUser.email}>
+            <button className="p-4 bg-gray-900 rounded-full">
+              <Message
+                strokeWidth={2}
+                className="w-6 h-6 text-white fill-current"
+              />
+            </button>
+          </FeedbackFish>
+        </div>
+      )}
 
       <aside>
         <UploadImageDialog

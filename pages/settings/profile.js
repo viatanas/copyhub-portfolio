@@ -5,7 +5,13 @@ import nookies from "nookies";
 import { useEffect, useState, useRef } from "react";
 import { toast, Toaster } from "react-hot-toast";
 import { useRouter } from "next/router";
-import { LongArrowUpLeft, Cancel, WarningCircledOutline } from "iconoir-react";
+import {
+  LongArrowUpLeft,
+  Cancel,
+  WarningCircledOutline,
+  Message,
+} from "iconoir-react";
+import { FeedbackFish } from "@feedback-fish/react";
 
 // Component imports
 import Nav from "@/components/Navs/NavPrimary";
@@ -193,6 +199,18 @@ const ProfileSettings = ({ currentUser }) => {
       </Head>
 
       <Toaster position="bottom-center" />
+      {currentUser && (
+        <div className="fixed bottom-6 right-6">
+          <FeedbackFish projectId="17cd1ee16f8c77" userId={currentUser.email}>
+            <button className="p-4 bg-gray-900 rounded-full">
+              <Message
+                strokeWidth={2}
+                className="w-6 h-6 text-white fill-current"
+              />
+            </button>
+          </FeedbackFish>
+        </div>
+      )}
       {/* Back */}
       <div className="absolute flex flex-col items-center space-y-4 lg:fixed top-20 left-6">
         <button

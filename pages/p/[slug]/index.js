@@ -3,8 +3,9 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Mail, NavArrowDown } from "iconoir-react";
+import { Mail, Message } from "iconoir-react";
 import nookies from "nookies";
+import { FeedbackFish } from "@feedback-fish/react";
 
 // Component imports
 import NavSecondary from "@/components/Navs/NavSecondary";
@@ -53,6 +54,19 @@ export default function Home({ currentUser }) {
         user={user}
         currentUser={currentUser}
       />
+
+      {currentUser && (
+        <div className="fixed bottom-6 right-6">
+          <FeedbackFish projectId="17cd1ee16f8c77" userId={currentUser.email}>
+            <button className="p-4 bg-gray-900 rounded-full">
+              <Message
+                strokeWidth={2}
+                className="w-6 h-6 text-white fill-current"
+              />
+            </button>
+          </FeedbackFish>
+        </div>
+      )}
 
       <main className="z-10 flex justify-center w-full px-6 py-24 mt-14 lg:px-0">
         <div className="flex flex-col w-full max-w-5xl">
