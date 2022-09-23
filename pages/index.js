@@ -54,7 +54,7 @@ export default function Home({ currentUser }) {
         {/* Header */}
         <section className="flex flex-col items-center w-full px-4 lg:px-0">
           <div className="flex flex-col items-center w-full max-w-lg">
-            <h1 className="text-5xl font-light text-center text-gray-900 font-inter">
+            <h1 className="text-6xl font-light text-center text-gray-900 font-garamond">
               <span className="italic">Portfolios</span> <br></br> that impress
             </h1>
             <p className="w-full text-base font-light leading-7 text-center text-gray-500 mt-7 font-inter">
@@ -106,15 +106,15 @@ export default function Home({ currentUser }) {
         </section>
 
         {/* Section 2 */}
-        <section className="flex justify-center w-full px-4 py-20 mt-40 bg-gray-900 border-gray-200 lg:px-0 bg-opacity-5 border-y">
+        <section className="flex justify-center w-full px-4 py-20 mt-40 bg-gray-100 bg-opacity-50 border-gray-200 lg:px-0 border-y">
           <div className="flex flex-col items-center w-full max-w-xl">
             <div className="flex items-center h-6 px-3 text-xs font-light tracking-wider text-gray-700 bg-gray-900 border border-gray-300 rounded-full bg-opacity-10 w-max font-inter">
               BEST OF BOTH
             </div>
-            <span className="mt-6 text-2xl font-light text-center text-gray-900 lg:text-3xl font-inter">
+            <span className="mt-6 text-2xl font-light text-center text-gray-900 lg:text-4xl font-garamond">
               The <span className="italic">simplicity</span> of Google Drive
             </span>
-            <span className="text-2xl font-light text-center text-gray-900 lg:mt-2 lg:text-3xl font-inter">
+            <span className="text-2xl font-light text-center text-gray-900 lg:mt-2 lg:text-4xl font-garamond">
               with the <span className="italic">quality</span> of a personal
               website.
             </span>
@@ -131,7 +131,7 @@ export default function Home({ currentUser }) {
             <div className="flex items-center h-6 px-3 text-xs font-light tracking-wider text-gray-700 bg-gray-900 border border-gray-300 rounded-full bg-opacity-10 w-max font-inter">
               THE PERKS
             </div>
-            <span className="mt-6 text-2xl font-light text-center text-gray-900 lg:text-3xl font-inter">
+            <span className="mt-6 text-2xl font-light text-center text-gray-900 lg:text-4xl font-garamond">
               <span className="italic">Save</span> time,{" "}
               <span className="italic">relieve</span> stress,{" "}
               <span className="italic">convert</span> more.
@@ -139,7 +139,7 @@ export default function Home({ currentUser }) {
             <div className="grid w-full grid-cols-1 mt-12 lg:grid-cols-3 lg:gap-x-4 gap-y-4">
               <div className="flex flex-col items-center w-full px-8 border border-gray-200 rounded-lg py-14">
                 <ClockOutline className="text-gray-900 w-7 h-7" />
-                <span className="mt-8 text-xl font-light text-center text-gray-900 lg:text-2xl font-inter">
+                <span className="mt-8 text-xl font-light text-center text-gray-900 lg:text-3xl font-garamond">
                   Save hours building a professional portfolio
                 </span>
                 <span className="mt-4 text-base font-light leading-7 text-center text-gray-500 font-inter">
@@ -150,7 +150,7 @@ export default function Home({ currentUser }) {
 
               <div className="flex flex-col items-center w-full px-8 bg-gray-100 bg-opacity-50 border border-gray-200 rounded-lg py-14 ">
                 <DesignPencil className="text-gray-900 w-7 h-7" />
-                <span className="mt-8 text-xl font-light text-center text-gray-900 lg:text-2xl font-inter">
+                <span className="mt-8 text-xl font-light text-center text-gray-900 lg:text-3xl font-garamond">
                   Never worry about design again
                 </span>
                 <span className="mt-4 text-base font-light leading-7 text-center text-gray-500 font-inter">
@@ -161,7 +161,7 @@ export default function Home({ currentUser }) {
 
               <div className="flex flex-col items-center w-full px-8 border border-gray-200 rounded-lg py-14">
                 <MoneySquare className="text-gray-900 w-7 h-7" />
-                <span className="mt-8 text-xl font-light text-center text-gray-900 lg:text-2xl font-inter">
+                <span className="mt-8 text-xl font-light text-center text-gray-900 lg:text-3xl font-garamond">
                   Convert more clients through credibility
                 </span>
                 <span className="mt-4 text-base font-light leading-7 text-center text-gray-500 font-inter">
@@ -178,7 +178,7 @@ export default function Home({ currentUser }) {
             <div className="flex items-center h-6 px-3 text-xs font-light tracking-wider text-gray-700 bg-gray-900 border border-gray-300 rounded-full bg-opacity-10 w-max font-inter">
               FEATURES
             </div>
-            <span className="mt-6 text-2xl font-light text-center text-gray-900 lg:text-3xl font-inter">
+            <span className="mt-6 text-2xl font-light text-center text-gray-900 lg:text-4xl font-garamond">
               Look <span className="italic">professional</span> the{" "}
               <span className="italic">easy</span> way
             </span>
@@ -189,8 +189,8 @@ export default function Home({ currentUser }) {
             </span>
             <div className="grid w-full grid-cols-1 gap-5 mt-16 lg:grid-cols-5">
               {/* First box */}
-              <div className="relative flex flex-col col-span-1 p-10 bg-gray-900 border border-gray-200 rounded-lg lg:col-span-3 bg-opacity-5">
-                <span className="text-xl font-light text-gray-900 font-inter">
+              <div className="relative flex flex-col col-span-1 p-10 bg-gray-100 bg-opacity-50 border border-gray-200 rounded-lg lg:col-span-3 ">
+                <span className="text-2xl font-light text-gray-900 font-garamond">
                   Simple Editor
                 </span>
                 <span className="mt-2 text-base font-light leading-7 text-gray-500 font-inter">
@@ -199,13 +199,13 @@ export default function Home({ currentUser }) {
                 </span>
                 <div className="w-full mt-48 lg:mt-72"></div>
                 <img
-                  className="absolute bottom-0 right-0 w-11/12 border-t border-l border-gray-200 rounded-tl-lg lg:w-full"
+                  className="absolute bottom-0 right-0 w-11/12 border-t border-l border-gray-200 rounded-tl-lg lg:w-11/12"
                   src="https://uploads-ssl.webflow.com/62ebdd574ecda2227e81afd4/62ebf5bb7adc45e8fc61d91d_Editor.svg"
                 />
               </div>
               {/* Second box */}
-              <div className="flex flex-col h-full col-span-1 py-10 pl-10 overflow-hidden bg-gray-900 border border-gray-200 rounded-lg lg:col-span-2 bg-opacity-5">
-                <span className="text-xl font-light text-gray-900 font-inter">
+              <div className="flex flex-col h-full col-span-1 py-10 pl-10 overflow-hidden bg-gray-100 bg-opacity-50 border border-gray-200 rounded-lg lg:col-span-2 ">
+                <span className="text-2xl font-light text-gray-900 font-garamond">
                   Professional URL
                 </span>
                 <span className="mt-2 text-base font-light leading-7 text-gray-500 font-inter">
@@ -231,10 +231,10 @@ export default function Home({ currentUser }) {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center justify-between col-span-1 p-10 bg-gray-900 border border-gray-200 rounded-lg lg:col-span-5 lg:flex-row bg-opacity-5">
+              <div className="flex flex-col items-center justify-between col-span-1 p-10 bg-gray-100 bg-opacity-50 border border-gray-200 rounded-lg lg:col-span-5 lg:flex-row ">
                 <div className="flex flex-col items-start">
                   <div className="flex flex-col-reverse items-center lg:space-x-2 lg:flex-row">
-                    <span className="text-xl font-light text-gray-900 font-inter">
+                    <span className="text-2xl font-light text-gray-900 font-garamond">
                       Explore Page
                     </span>
                     <div className="flex items-center h-6 px-3 mb-4 text-xs font-light tracking-wider text-gray-700 bg-gray-200 rounded-full lg:mb-0 bg-opacity-70 w-max font-inter">
@@ -283,7 +283,7 @@ export default function Home({ currentUser }) {
             <div className="flex items-center h-6 px-3 text-xs font-light tracking-widest text-gray-700 bg-gray-900 border border-gray-300 rounded-full bg-opacity-10 w-max font-inter">
               PRICING
             </div>
-            <span className="mt-6 text-2xl font-light text-center text-gray-900 lg:text-3xl font-inter">
+            <span className="mt-6 text-2xl font-light text-center text-gray-900 lg:text-4xl font-garamond">
               <span className="italic">Build</span> your portfolio,{" "}
               <span className="italic">grow</span> your career
             </span>
@@ -310,7 +310,7 @@ export default function Home({ currentUser }) {
                 </Link>{" "}
               </div>
 
-              <div className="flex flex-col w-full px-10 py-12 bg-gray-300 border border-gray-200 rounded-lg bg-opacity-20">
+              <div className="flex flex-col w-full px-10 py-12 bg-gray-100 bg-opacity-50 border border-gray-200 rounded-lg">
                 <span className="text-base font-light text-gray-900 font-inter">
                   Pro
                 </span>
@@ -333,9 +333,9 @@ export default function Home({ currentUser }) {
           </div>
         </section>
 
-        <section className="flex justify-center w-full px-3 py-20 bg-gray-300 border-b border-gray-200 lg:px-0 bg-opacity-20">
+        <section className="flex justify-center w-full px-3 py-20 bg-gray-100 bg-opacity-50 border-b border-gray-200 lg:px-0">
           <div className="flex flex-col items-center w-full max-w-5xl">
-            <span className="mt-6 text-2xl font-normal text-center text-gray-900 lg:text-3xl font-inter">
+            <span className="mt-6 text-2xl font-normal text-center text-gray-900 lg:text-4xl font-garamond">
               We tackle the <span className="italic">website</span>, you tackle
               your <span className="italic">career</span>
             </span>

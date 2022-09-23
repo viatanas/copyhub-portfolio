@@ -21,6 +21,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: "Inter",
+        garamond: "EB Garamond",
       },
     },
   },
